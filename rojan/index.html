@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dear Rojan 💌</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #ffe4ec, #d9eaff);
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff9fcf;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff69b4;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .reason-box {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em;
+    }
+
+    button {
+      background-color: #ff8fcb;
+      color: white;
+      font-size: 1.2em;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #ff6bb0;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="image/WIN_20250213_08_23_16_Pro.jpg" alt="Charm's Pic" class="profile-pic" />
+
+  <h1>Hi Rojan! 💕</h1>
+  <p>I made this website just for you. Here's why you should totally date me 😳👇</p>
+
+  <div class="reason-box" id="reason-box">
+    💗 I'm sweeter than your fave milk tea
+  </div>
+
+  <button onclick="prevReason()">⬅️ Back</button>
+  <button onclick="nextReason()">Next ➡️</button>
+
+
+  <footer>
+    <p>Made with love by Charm Venice Montero 💖</p>
+  </footer>
+
+  <script>
+    const reasons = [
+      "💗 I'm sweeter than your fave milk tea",
+      "😂 I’ll laugh at your jokes, even the corny ones",
+      "🛐 I support you like WiFi — always connected",
+      "🤭 Free cuddles and love 24/7 (if you say yes)",
+      "💻 I built a whole website just for YOU",
+      "❌ I will not cheat cause cheating is bad and I'm not bad I'm good ",
+      "🤪 I'm really funny well ahm I think, for me I am nyahahahha",
+      "🤗 I'm loyal and will always be there for you always my love mwhehehe",
+      "☎️ I'll answer you back immediately when you all me, unless i'm busy or pooping or maybe dead char mwehehe",
+      "😇 I have the kindest heart, uwu 🥺👉👈",
+      "💯 kupal, 💯 loyal, 💯 flirty, 💯 clingy, 💯 in love with you, 💯 iyakin, 💯 masungit, 💯 mabait",
+        "🌟 I always brighten up your day like a shooting star",
+        "🎶 I’ll sing you song even if I sound terrible",
+        "🐾 I’m as loyal as your favorite pet, kahit lagi ka nyang nilalayasan nyahaha ako hindi ambait ko diba",
+        "💌 I'll write cute messages just to make you smile",
+        "☕ I’m the perfect blend of sweet and strong, just like your coffee",
+        "📚 I’ll listen to your stories no matter how long",
+        "🎨 I can paint a beautiful future with you",
+        "🌈 I’m your rainbow after the storm",
+        "🎁 Every day with me is like an unwrapped present",
+        "💖 I love you not just for who you are, but for how you make me feel — safe, loved, and understood.",
+"🤍 I promise to take care of your heart like it's my own — gently, honestly, and with all the love I have.",
+"🔐 Your trust is precious to me. I will protect it, never betray it, and always prove I deserve it.",
+"🫶 I'm not perfect, but I will always choose you — every single day, in every way, through every season.",
+"👀 Even if the world turns its back, I’ll stay. I’ll be here, loving you quietly, patiently, and endlessly.",
+"📖 Our story is my favorite, and I’ll keep writing it with you — through every chapter, no matter what comes.",
+"❤️ I don’t just like you, I genuinely, deeply love you. No lies, no games — just me, loving you truly.",
+"💬 I may joke a lot, but what I feel for you is serious. You mean so much to me, more than words could ever say.",
+"💓 I won’t give up on you, even on the hard days — especially on the hard days. That's a promise.",
+"🌙 I’ll love you through the quiet nights, the stormy days, the loud laughs, and even the silent tears.",
+"💙 You'll always be my boy, my man, my Hisoka, my love, my baby, may darling, my honey, my cutie patootie tootsie poopie,my Rojan, my ROHAN"
+   
+
+    ];
+
+    let currentIndex = 0;
+    function nextReason() {
+      currentIndex++;
+      if (currentIndex >= reasons.length) {
+        alert("Yun lang po 🥺 date me na?");
+        currentIndex = 0;
+      }
+      document.getElementById("reason-box").textContent = reasons[currentIndex];
+    }
+    function prevReason() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = reasons.length - 1;
+  }
+  document.getElementById("reason-box").textContent = reasons[currentIndex];
+}
+
+  </script>
+
+</body>
+</html>
